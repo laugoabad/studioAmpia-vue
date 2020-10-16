@@ -1,8 +1,6 @@
 <template>
   <div id="aree" class="container mx-auto">
-    <div classs="mx-3">
-      <h2 class="titulo-seccion">Aree d'Interesse</h2>
-    </div>
+    <h2 class="title-section pb-3 mb-5">Aree d'Interesse</h2>
     <div v-if="!leerMas" class="container-aree">
       <ul>
         <li v-for="(item, index) of aree" :key="index">
@@ -53,3 +51,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../public/css/styles.scss";
+</style>
