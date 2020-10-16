@@ -1,0 +1,51 @@
+$primary: #234342;
+$secondary: #40817a;
+$dominant: #d0d0b8;
+$predominant: #41919f;
+$predominant-light: #92c3cf;
+$green:#2e933c;
+$scarlet: #ff2e00;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 3rem;
+    -webkit-margin-top: 3rem;
+}
+
+header {
+    margin-top: 10rem
+}
+
+.title-section {
+    font-size: 3.2em;
+    color: #7c7575;
+    font-weight: 600;
+    border-bottom: 1px solid #7c7575;
+    padding-top: 2em;
+}
+
+.texto-grande {
+    font-size: 1.8em;
+}
+
+.texto-normal {
+    font-size: 1.6em;
+}
+
+.texto-chico {
+    font-size: 1.4em;
+}

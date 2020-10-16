@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" class="container-fluid">
+    <navigation />
+    <home />
+    <chiSiamo />
+    <servizi />
+    <aree />
+    <eventi />
+    <blog />
+     
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import Navigation from "./components/Navigation.vue";
+import Home from "./views/Home.vue";
+import ChiSiamo from "./views/ChiSiamo.vue";
+import Servizi from "./views/Servizi.vue";
+import Aree from "./views/Aree.vue";
+import Eventi from "./views/Eventi.vue";
+import Blog from "./views/Blog.vue"
+export default {
+  name: "App",
+  components: {
+    Navigation,
+    Home,
+    ChiSiamo,
+    Servizi,
+    Aree,
+    Eventi,
+    Blog
+  },
+  
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../public/css/styles.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, "Segoe UI", "Roboto", "Helvetica Neue",
+    "Arial";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $primary;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.container-fluid {
+  padding-left: 0em;
+  padding-right: 0em;
 }
+
+
 </style>

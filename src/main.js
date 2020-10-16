@@ -3,6 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import vueScrollto from 'vue-scrollto'
+
+Vue.use(vueScrollto)
+
+
+
 Vue.config.productionTip = false
 
 new Vue({
