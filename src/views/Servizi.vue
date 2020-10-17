@@ -100,8 +100,8 @@ export default {
     margin: 1.8em;
     box-shadow: 0 6px 12px 0 rgba(90, 73, 73, 0.6),
       0 12px 30px 0 rgba(90, 73, 73, 0.6);
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
     transition-duration: 1s;
     -moz-transition-duration: 1s;
     .card-header {
