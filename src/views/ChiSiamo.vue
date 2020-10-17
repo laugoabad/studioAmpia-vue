@@ -62,7 +62,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/css/styles.scss";
 .elem {
-    width: 70%;
+    width: 80%;
     
 .title {
     font-size: 2em;
@@ -74,7 +74,11 @@ img {
     width: 1.5em;
     height: 1.5em;
   }
-
+}
+@media (min-width: 1024px) {
+  .elem {
+      width: 70%;
+  }
 }
 
 </style>
