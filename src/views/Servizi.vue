@@ -19,7 +19,7 @@
         <article
           v-for="(item, index) of servizi"
           :key="index"
-          class="card col-8 col-md-3 col-xl-3"
+          class="card col-11 col-md-3 col-xl-3"
           @click="checkLeerMas(index)"
         >
           <div class="card-header">
