@@ -24,12 +24,12 @@
                 </h4>
 
                 <div class="fecha texto-chico">
-                  <img src="imgs/iconmonstr-time-3-240.png" alt width="10" height="10" />
+                  <img src="./../assets/imgs/iconmonstr-time-3-240.png" alt width="10" height="10" />
                   <strong>{{fecha.ora}}</strong>
                 </div>
 
                 <div class="fecha texto-chico">
-                  <img src="imgs/iconmonstr-location-1-240.png" alt width="10" height="10" />
+                  <img src="./../assets/imgs/iconmonstr-location-1-240.png" alt width="10" height="10" />
                   {{fecha.luogo}}
                 </div>
               </div>
