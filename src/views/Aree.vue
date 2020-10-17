@@ -1,14 +1,14 @@
 <template>
-  <div id="aree" class="container mx-auto">
+  <div id="aree" class="container mx-auto px-5">
     <h2 class="title-section pb-3 mb-5">Aree d'Interesse</h2>
     <div v-if="!leerMas" class="container-aree">
       <ul>
-        <li v-for="(item, index) of aree" :key="index">
-          <h3 class="mt-5 font-weight-bold">{{item.titulo}}</h3>
-          <div class="texto-normal">
-            <p style="white-space:pre-line;" class="mt-n3">{{item.texto1}}</p>
+        <li v-for="(item, index) of aree" :key="index" class="mb-5">
+          <h3 class="my-3 title-aree texto-grande font-weight-bold">{{item.titulo}}</h3>
+          <div class="">
+            <p style="white-space:pre-line;" class="texto-normal">{{item.texto1}}</p>
             <a href="#aree">
-              <button class="btn btn-secondary" @click="checkLeerMas(index)">
+              <button  type="button" class="btn btn-read px-2 py-1 mt-3" @click="checkLeerMas(index)">
                 <span v-if="leerMas">Leggere -</span>
                 <span v-else>Leggere +</span>
               </button>
@@ -19,12 +19,12 @@
     </div>
 
     <template v-else>
-      <h3 class="mt-5 font-weight-bold">{{aree[i].titulo}}</h3>
-      <p style="white-space:pre-line;" class="texto-normal mt-n3">
+      <h3 class="my-3 texto-grande font-weight-bold">{{aree[i].titulo}}</h3>
+      <p style="white-space:pre-line;" class="texto-normal">
         {{aree[i].texto1}}
         {{aree[i].texto2}}
       </p>
-      <button class="btn btn-secondary" @click="leerMas=!leerMas">
+      <button  type="button" class="btn btn-read px-2 py-1 mt-3" @click="leerMas=!leerMas">
         <span v-if="leerMas">Leggere -</span>
         <span v-else>Leggere +</span>
       </button>
@@ -54,4 +54,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../public/css/styles.scss";
+.title-aree {
+   background-color: $neutral;
+   color: $primary;
+   padding: 1em;
+}
 </style>

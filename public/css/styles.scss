@@ -2,7 +2,7 @@ $primary: #206a5d;
 $secondary: #40817a;
 $dominant: #81b214;
 $predominant: #bfdcae;
-$predominant-light: #92c3cf;
+$neutral:#d0d0b8;
 $green:#2e933c;
 $scarlet: #ff2e00;
 $light:#f1f1e8;
@@ -32,6 +32,10 @@ header {
     margin-top: 10rem
 }
 
+ul {
+    list-style-type: none;
+}
+
 .title-section {
     font-size: 3.2em;
     color: #7c7575;
@@ -50,4 +54,9 @@ header {
 
 .texto-chico {
     font-size: 1.4em;
+}
+
+.btn-read {
+    background-color: $secondary;
+    color: white;
 }

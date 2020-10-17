@@ -45,7 +45,8 @@
             <div
               class="btn btn-success px-3 py-1 mb-4 text-center texto-chico font-weight-bold"
               @click="leerMas = !leerMas"
-            >Torna indietro</div>
+            >Torna indietro
+            </div>
           </div>
           </div>
          
@@ -84,7 +85,7 @@ export default {
 @import "../../public/css/styles.scss";
 #servizi {
   .servizi-images img {
-    width: 60%;
+    width: 50%;
     height: auto;
     border-radius: 8em;
     margin-bottom: 2em;
@@ -108,7 +109,7 @@ export default {
     }
     .card-body {
       color: $predominant;
-      background-color: $predominant;
+      background-color: $light;
       padding: 2em;
       .card-title {
         font-size: 1.8em;
@@ -130,9 +131,9 @@ export default {
     .card-img-top img {
       width: 7em;
       height: auto;
-      margin: 1.2em 0em;
+      margin: 1em 0em;
       background-color: white;
-      padding: 1em;
+      padding: 0.8em;
     }
   }
   .info {

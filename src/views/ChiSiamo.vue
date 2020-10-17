@@ -74,10 +74,7 @@ img {
     width: 1.5em;
     height: 1.5em;
   }
-.btn-read {
-    background-color: $secondary;
-    color: white;
-}
+
 }
 
 </style>
