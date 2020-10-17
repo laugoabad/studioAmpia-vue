@@ -36,6 +36,7 @@ export default {
 @import "../../public/css/styles.scss";
 .home {
   padding-top: 8em;
+  
 }
 
 .title {
@@ -56,9 +57,17 @@ img {
   background-position: center;
   background-size: cover;
   p{
-    padding: 3em 6em;
-    font-size: 1.8em;
+    padding: 2em 2em;
+    font-size: 1.4em;
   }
- 
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    p {
+      padding: 3em 6em;
+    font-size: 1.8em;
+    }
+  }
 }
 </style>
