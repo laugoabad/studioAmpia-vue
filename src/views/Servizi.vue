@@ -15,11 +15,11 @@
     </div>
 
     <div v-if="!leerMas" class="mt-5">
-      <div class="row d-flex justify-content-center mx-5">
+      <div class="row d-flex justify-content-center mx-3">
         <article
           v-for="(item, index) of servizi"
           :key="index"
-          class="card col-11 col-md-3 col-xl-3"
+          class="card col-11 col-md-4 col-xl-4"
           @click="checkLeerMas(index)"
         >
           <div class="card-header">
