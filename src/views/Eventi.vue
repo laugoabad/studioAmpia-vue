@@ -1,6 +1,6 @@
 <template>
   <div id="eventi">
-    <div>
+    <!-- <div>
       <h2 class="titulo-seccion text-center">Eventi</h2>
     </div>
     <h2 class="sub-titulo">Calendario</h2>
@@ -37,7 +37,7 @@
           </div>
         </div>
       </article>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -98,8 +98,8 @@ export default {
   .card {
     min-height: 10em;
     margin: 1.8em;
-    box-shadow: 0 6px 12px 0 rgba(64, 129, 122, 0.5),
-      0 12px 30px 0 rgba(64, 129, 122, 0.2);
+    box-shadow: 0 6px 12px 0 rgba(239, 239, 231, 0.5),
+      0 12px 30px 0 rgba(239, 239, 231, 0.2);
     transform: scale(1);
     -moz-transform: scale(1);
     transition-duration: 1s;
@@ -108,13 +108,13 @@ export default {
         background-color: white;
     }
     .card-body {
-      color: $predominant;
-      background-color: $light;
+      color: $dark;
+      background-color: $neutral;
       padding: 2em;
       .card-title {
         font-size: 1.8em;
-        font-weight: bold;
-        color: $primary;
+      
+        color: $dark;
       }
       p {
           color:$primary;

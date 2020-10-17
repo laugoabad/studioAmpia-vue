@@ -56,7 +56,7 @@ export default {
 @import "../../public/css/styles.scss";
 .title-aree {
    background-color: $neutral;
-   color: $primary;
+   color: $dark;
    padding: 1em;
 }
 </style>

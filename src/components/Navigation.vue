@@ -75,10 +75,11 @@ export default {
 
 nav {
   padding: 1em;
+  background-color: light;
   .navbar-brand {
     font-size: 1.8em;
     font-weight: 600;
-    color: $predominant;
+    color: $scarlet;
     img {
       width: 4em;
       height: 4em;
@@ -90,7 +91,7 @@ nav {
     font-size: 1.4em;
     margin-right: 1em;
     &.nav-link.router-link-exact-active.router-link-active{
-      color: $predominant;
+      color: $scarlet;
       font-weight: 800;
     }
   }

@@ -106,9 +106,39 @@ export default new Vuex.Store({
         texto1: 'L’Età Adulta è l’età del pensiero maturo. L’arco della vita, tuttavia, è naturalmente scandito da momenti differenti, caratterizzati da situazioni e da legami in continuo mutamento e divenire. Spesso ci si trova ad affrontare periodi di grande fatica, instabilità, sconforto, talvolta di vera e propria solitudine.Può accadere di sentirsi disorientati di fronte a scelte importanti e cambiamenti significativi.Si può avvertire una sensazione di insoddisfazione, di incompletezza, spesso senza che la ragione del malessere sia di agevole comprensione. Il lutto, le separazioni, la perdita di un posto di lavoro, sono eventi profondamente angoscianti; il dolore per una perdita può destabilizzare la vita di tutti i giorni e le relazioni, presenti e future.Avere a che fare con sentimenti di questa portata, non di rado, allontana dalla consapevolezza delle proprie risorse.',
         texto2: 'Un evento traumatico o il protrarsi nel tempo di una situazione difficile hanno certamente un forte impatto sulla psiche, ma quando anche il corpo si fa portavoce del disagio, la sintomatologia che ne deriva non sempre è facilmente decifrabile.\n\nMolto spesso la sofferenza è tale da generare la sensazione netta di essere “poco attrezzati”, sia nel riconoscere che nel dare significato a quanto accade, in modo da potervi far fronte.\n\nTalora i meccanismi di difesa, consolidatisi così faticosamente nel tempo e grazie ai quali si è sempre mantenuto un buono stato di equilibrio, non si rendono più sufficientemente efficaci.Spesso, in occasione di eventi particolarmente stressanti, si ha una sensazione di vulnerabilità e di sopraffazione.Il vissuto si amplifica ed è proprio in questi frangenti che si incorre nel rischio di invorticarsi in stati depressivi o ansiosi, in condizioni di faticoso rimuginio, che rendono complesse e insostenibili anche le piccole azioni del vivere quotidiano, minando legami affettivi e lavorativi.\n\nDiventa pertanto essenziale riuscire a dar voce al complesso di stati d’animo attraverso cui si transita, per periodi più o meno lunghi, trovando uno spazio nel quale darsi la possibilità di mettere in parola quel che di più scomodo affligge, uno spazio nel quale dare significato ad un sintomo che si fa via via più gravoso e intollerabile e di cui ci si vorrebbe soltanto liberare, acquisendo una consapevolezza maggiore, che consenta di riscoprire le proprie risorse e costruirne di nuove.'
       }
-    ]
-   
-    
+    ],
+
+      blog: [
+                {
+                    titulo: 'I Disturbi dell Sonno nell’Infanzia',
+                    imagen: 'imgs/eventi1.png',
+                    texto: 'Il sonno disordinato e discontinuo, in un periodo della vita nel quale siamo portati ad immaginarlo sereno e indisturbato, è ormai motivo di consultazione frequente, in quest’epoca di ritmi frenetici, di luci artificiali diffuse e persistenti, di strumenti elettronici sempre più precocemente a disposizione dei piccoli. \nUn’occasione per esplorare e condividere aspetti organici e aspetti di ordine più squisitamente psicologico, ma anche e soprattutto per comprendere lo sviluppo naturale dell’autonomia dell’addormentamento, uno dei traguardi fondamentali nella crescita dei nostri bambini.'
+                },
+                {
+                    titulo: 'L’Adolescente e la Paura del Mondo',
+                    imagen: 'imgs/eventi2.jpg',
+                    texto: 'Un momento di confronto e di scambio in cui riflettere sull’adolescenza, sulle sfide e sui mutamenti del sistema relazionale che vede protagonisti i ragazzi e le loro famiglie, in un’epoca dominata da un’iperconnessione che troppo spesso si traduce in profonda solitudine e paura del mondo.\n\nI nuovi adolescenti tra reale e virtuale: uno spazio ignoto in cui cercare incessantemente un equilibrio mai scontato, in cui cercare risposte e tentare automedicazioni; un terreno sconosciuto alle famiglie e agli educatori, che genera dubbi e angosce e che ci interroga sulla funzione dell’adulto.\nL’incontro ha l’obiettivo di creare un dialogo, una connessione, tra mondi non così distinti.'
+                },
+                {
+                    titulo: 'DSA - Il Punto di Vista del Bambino',
+                    imagen: 'imgs/eventi3.jpg',
+                    texto: 'Un incontro formativo e informativo per fare chiarezza sui Disturbi Specifici dell’Apprendimento(DSA). Ripercorrendo ciascuna delle fasi dal percorso diagnostico, sino alla formulazione di strategie di compensazione, ci si soffermerà in special modo sui vissuti dei bambini e dei ragazzi.'
+                },
+                {
+                    titulo: 'I Famigerati Terribili Due',
+                    imagen: 'imgs/eventi4.jpg',
+                    texto: 'I due anni, terribili e deliziosi, sono il territorio di confine in cui massimamente si incontrano l’imitazione e la limitazione. I tentativi costanti del piccolo di svalicare i limiti e le negoziazioni continue sembrano non trovare soluzione.\n\nImprovvisamente anche il bambino dal temperamento più mite affina l’arte delle urla, dei pianti inconsolabili e delle reazioni inaspettate. L’autonomia che sboccia, la personalità che brilla, sono aspetti straordinari da osservare, ma spesso si è stanchi per prestare l’attenzione che si vorrebbe e che il bambino si aspetta.\n\nRivolgiamo lo sguardo al loro atteggiamento oppositivo come tentativo iniziale, talora maldestro, senz’altro confuso, di comprendere e sperimentare la propria posizione nel mondo.\n\nConsideriamo gli aspetti fondamentali della genitorialità, in un’epoca della crescita in cui il paradigma - benché declinato nella maniera più varia e molteplice - è l stesso per tutti: il compito dell’adulto è di porre limiti, il compito del piccolo è di oltrepassarli …un No contro No, che fa scintille!'
+
+                },
+               
+                {
+                    titulo: 'Il Tempo di Svezzare',
+                    imagen: 'imgs/eventi5.png',
+                    texto: 'L’idea di approdare finalmente allo svezzamento può sollevare non poche preoccupazioni. È un momento del tutto rivoluzionario, ma è anche un traguardo cui naturalmente si guarda con sentimenti ambivalenti. Per la madre rappresenta una delle prime occasioni per riconoscere l’individualità del proprio bambino, con le sue preferenze, competenze, con il suo temperamento e tendenza più o meno spontanea ad abbracciare l’autonomia.\n\nParliamo di una delle prime, importanti, fasi di acquisizione di autonomia, che anticipa e in certa misura condiziona le successive, accompagnandosi, non di rado, alla sensazione di perdere l’equilibrio perfetto di cui si fa esperienza durante l’allattamento, traghettando tuttavia l’intera famiglia ad una nuova vivacissima dimensione. Sapori, consistenze, odori e colori cambiano e si moltiplicano rapidamente, tra lo stupore del piccolo e il divertimento di tutti.'
+                }
+            ],
+            
+
   },
 
   mutations: {
