@@ -19,7 +19,7 @@
         <article
           v-for="(item, index) of servizi"
           :key="index"
-          class="card col-11 col-md-4 col-xl-4"
+          class="card col-11 col-md-3 col-xl-3"
           @click="checkLeerMas(index)"
         >
           <div class="card-header">
@@ -98,10 +98,10 @@ export default {
   .card {
     min-height: 10em;
     margin: 1.8em;
-    box-shadow: 0 6px 12px 0 rgba(239, 239, 231, 0.5),
-      0 12px 30px 0 rgba(239, 239, 231, 0.2);
-    transform: scale(1);
-    -moz-transform: scale(1);
+    box-shadow: 0 6px 12px 0 rgba(90, 73, 73, 0.6),
+      0 12px 30px 0 rgba(90, 73, 73, 0.6);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
     transition-duration: 1s;
     -moz-transition-duration: 1s;
     .card-header {
