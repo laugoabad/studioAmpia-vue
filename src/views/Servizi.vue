@@ -36,7 +36,7 @@
     </div>
 
     <template v-else>
-      <article class="row d-flex justify-content-center m-5">
+      <article class="row d-flex justify-content-center m-2">
         <div class="card col-12">
           <div class="card-body pt-4">
             <h5 class="card-title text-center mt-3 mb-2">{{servizi[i].titulo}}</h5>

@@ -1,10 +1,10 @@
 <template>
     <div id="nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"  data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation" >
         <router-link to="/" class="navbar-brand" href="#">
           <img src="./../assets/imgs/logo.png" alt=""> Studio Ampia</router-link>
-        <button class="navbar-toggler" type="button" >
+        <button class="navbar-toggler mr-3" type="button" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown" >
@@ -75,7 +75,7 @@ export default {
 
 nav {
   padding: 1em;
-  background-color: light;
+  background-color: $neutral;
   .navbar-brand {
     font-size: 1.8em;
     font-weight: 600;
@@ -86,8 +86,8 @@ nav {
       margin-right: 1em;
     }
   }
+
   a {
-    
     font-size: 1.4em;
     margin-right: 1em;
     &.nav-link.router-link-exact-active.router-link-active{
@@ -112,7 +112,14 @@ nav {
     }
   }
 }
-
+.navbar-toggler {
+  border-color: rgba(0,0,0,0);
+}
+.navbar-toggler-icon {
+  background-image: url('./../assets/imgs/menu.png');
+  width: 2.6em;
+  height: 2.6em;
+}
 
 .fade-enter-active, .fade-leave-active {
    transition: opacity 1s;

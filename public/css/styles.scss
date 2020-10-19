@@ -60,3 +60,9 @@ ul {
     background-color: $secondary;
     color: white;
 }
+
+@media (min-width: 768px) {
+  .texto-normal {
+      font-size: 1.4em;
+  }
+}
