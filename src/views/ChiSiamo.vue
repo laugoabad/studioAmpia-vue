@@ -1,10 +1,9 @@
 <template>
     <div id="chisiamo" class="container mx-auto">
         <div >
-            <h2 class="title-section">Chi Siamo
+            <h2 class="title-section pb-3">Chi Siamo
             </h2>
         </div>
-
         <div v-for="(item, index) of chiSiamo"  :key="index" class="elem text-left mx-auto pt-5"> 
             <h3 class="title mb-3">
                 {{item.titulo}}
@@ -25,7 +24,7 @@
             <p style="white-space:pre-line;" class="collapse texto-normal" :class="'mostrar'+index">
                 {{item.texto2}}
             </p>
-             <button type="button" class="btn btn-read px-2 py-1 mt-3" data-toggle="collapse" :data-target="'.mostrar'+index" @click="ver('leerMas'+index);">
+             <button type="button" class="btn btn-success px-2 py-1 mt-3" data-toggle="collapse" :data-target="'.mostrar'+index" @click="ver('leerMas'+index);">
                 <span v-if="indice" class="texto-chico">Leggere&nbsp; -</span>
                 <span v-else  class="texto-chico">Leggere &nbsp; +</span>
             </button> 
@@ -58,18 +57,11 @@ export default {
     }
 }
 </script>
-
 <style lang="scss" scoped>
 @import "../../public/css/styles.scss";
 .elem {
     width: 80%;
     
-.title {
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: $green;
-}
 img {
     width: 1.5em;
     height: 1.5em;

@@ -8,7 +8,7 @@
           <div class="">
             <p style="white-space:pre-line;" class="texto-normal">{{item.texto1}}</p>
             <a href="#aree">
-              <button  type="button" class="btn btn-read px-2 py-1 mt-3" @click="checkLeerMas(index)">
+              <button  type="button" class="btn btn-success px-2 py-1 mt-3" @click="checkLeerMas(index)">
                 <span v-if="leerMas">Leggere -</span>
                 <span v-else>Leggere +</span>
               </button>
@@ -24,7 +24,7 @@
         {{aree[i].texto1}}
         {{aree[i].texto2}}
       </p>
-      <button  type="button" class="btn btn-read px-2 py-1 mt-3" @click="leerMas=!leerMas">
+      <button  type="button" class="btn btn-success px-2 py-1 mt-3" @click="leerMas=!leerMas">
         <span v-if="leerMas">Leggere -</span>
         <span v-else>Leggere +</span>
       </button>

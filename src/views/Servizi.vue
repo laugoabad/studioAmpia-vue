@@ -83,7 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../public/css/styles.scss";
-#servizi {
+
   .servizi-images img {
     width: 50%;
     height: auto;
@@ -113,7 +113,6 @@ export default {
       padding: 2em;
       .card-title {
         font-size: 1.8em;
-      
         color: $dark;
       }
       p {
@@ -122,8 +121,8 @@ export default {
     }
 
     &:hover {
-      transform: scale(1.02);
-      -moz-transform: scale(1.02);
+      transform: scale(1.1);
+      -moz-transform: scale(1.1);
       transition-duration: 1s;
       -moz-transition-duration: 1s;
     }
@@ -140,11 +139,14 @@ export default {
     font-size: 1.4em;
     color: $scarlet;
     padding: 1em;
+    &:hover {
+      color: #2e933c;
+    }
+    
   }
   .text {
     font-size: 1.4em;
   }
-}
 
 @media (min-width: 1024px) {
   #servizi img {

@@ -1,11 +1,10 @@
 <template>
-  <div id="eventi">
-    <!-- <div>
-      <h2 class="titulo-seccion text-center">Eventi</h2>
-    </div>
-    <h2 class="sub-titulo">Calendario</h2>
+  <div id="eventi" class="container mx-auto">
+    <h2 class="title-section pb-3 mb-5">Eventi</h2>
+   
+    <h2 class="title">Calendario</h2>
 
-    <div class="row calendario mx-auto">
+    <!-- <div class="row calendario mx-auto">
       <article v-for="(fecha, index) of fechas" :key="index" class="col-12 mx-auto">
         <div v-if="fecha.giorno!=='' ">
           <div :class="{'row-striped-grey': index % 2 === 0, 'row-striped-white': index % 2 !== 0}">
@@ -37,7 +36,7 @@
           </div>
         </div>
       </article>
-    </div> -->
+    </div>  -->
   </div>
 </template>
 
@@ -50,3 +49,8 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../public/css/styles.scss";
+
+</style>

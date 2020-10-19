@@ -43,22 +43,23 @@ ul {
     border-bottom: 1px solid #7c7575;
     padding-top: 2.2em;
 }
+.title {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: $green;
+}
 
 .texto-grande {
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .texto-normal {
-    font-size: 1.6em;
+    font-size: 1.7em;
 }
 
 .texto-chico {
     font-size: 1.4em;
-}
-
-.btn-read {
-    background-color: $secondary;
-    color: white;
 }
 
 @media (min-width: 768px) {

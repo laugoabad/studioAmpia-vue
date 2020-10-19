@@ -5,9 +5,8 @@
     <chiSiamo />
     <servizi />
     <aree />
-    <eventi />
     <blog />
-     
+     <eventi />
   </div>
 </template>
 
