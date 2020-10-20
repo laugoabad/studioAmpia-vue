@@ -1,8 +1,8 @@
 <template>
   <div id="eventi" class="container mx-auto">
-    <h2 class="title-section pb-3 mb-5">Eventi</h2>
+    <!-- <h2 class="title-section pb-3 mb-5">Eventi</h2>
    
-    <h2 class="title">Calendario</h2>
+    <h2 class="title">Calendario</h2> -->
 
     <!-- <div class="row calendario mx-auto">
       <article v-for="(fecha, index) of fechas" :key="index" class="col-12 mx-auto">
