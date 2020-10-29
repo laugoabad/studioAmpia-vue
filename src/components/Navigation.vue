@@ -24,9 +24,9 @@
             <li class="nav-item">
               <router-link to="/aree" v-scroll-to="{el: '#aree', duration: 2000 }" class="nav-link">Aree d'Interesse</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/blog"  v-scroll-to="{el: '#blog', duration: 3000 }" class="nav-link">Blog</router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link to="/eventi"  v-scroll-to="{el: '#eventi', duration: 2500 }" class="nav-link">Eventi</router-link>
             </li>

@@ -1,12 +1,17 @@
 <template>
   <div id="app" class="container-fluid">
     <navigation />
+    <router-link to="/admin" class="admin">Admin</router-link>
+ 
+    <router-view />
+ 
     <home />
     <chiSiamo />
     <servizi />
     <aree />
     <blog />
-     <eventi />
+    <eventi />
+
   </div>
 </template>
 
@@ -17,7 +22,8 @@ import ChiSiamo from "./views/ChiSiamo.vue";
 import Servizi from "./views/Servizi.vue";
 import Aree from "./views/Aree.vue";
 import Eventi from "./views/Eventi.vue";
-import Blog from "./views/Blog.vue"
+import Blog from "./views/Blog.vue";
+
 export default {
   name: "App",
   components: {
@@ -27,7 +33,7 @@ export default {
     Servizi,
     Aree,
     Eventi,
-    Blog
+    Blog,
   },
   
 }

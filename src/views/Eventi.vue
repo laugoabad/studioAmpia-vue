@@ -1,56 +1,125 @@
 <template>
-  <div id="eventi" class="container mx-auto">
-    <!-- <h2 class="title-section pb-3 mb-5">Eventi</h2>
-   
-    <h2 class="title">Calendario</h2> -->
-
-    <!-- <div class="row calendario mx-auto">
-      <article v-for="(fecha, index) of fechas" :key="index" class="col-12 mx-auto">
-        <div v-if="fecha.giorno!=='' ">
-          <div :class="{'row-striped-grey': index % 2 === 0, 'row-striped-white': index % 2 !== 0}">
-            <div class="row">
-              <div class="col-3 text-center">
-                <h2 class="display-4">
-                  <span class="badge badge-secondary">{{fecha.giorno}}</span>
-                </h2>
-                <h3>
-                  <strong>{{fecha.mese}}</strong>
-                </h3>
-              </div>
-              <div class="col-9">
-                <h4 class="text-uppercase texto-normal">
-                  <strong>{{fecha.titulo}}</strong>
-                </h4>
-
-                <div class="fecha texto-chico">
-                  <img src="./../assets/imgs/time.png" alt width="10" height="10" />
-                  <strong>{{fecha.ora}}</strong>
-                </div>
-
-                <div class="fecha texto-chico">
-                  <img src="./../assets/imgs/location.png" alt width="10" height="10" />
-                  {{fecha.luogo}}
-                </div>
-              </div>
-            </div>
+  <div id="blog" class="container mx-auto px-5">
+    <h2 class="title-section pb-3">Blog</h2>
+    <div v-if="!leerMas" class="mt-5">
+      <div class="row d-flex justify-content-center mx-3">
+        <article
+          v-for="(item, index) of blog"
+          :key="index"
+          class="card col-12 col-md-4 col-xl-3"
+          @click="checkLeerMas(index)"
+        >
+          <div class="card-img-top embed-responsive d-flex align-items-center justify-content-center">
+            <img :src="getImgUrl(item.imagen)" alt />
           </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center mb-1">{{item.titulo}}</h5>
+          </div>
+
+          <div class="info float-right font-weight-bold">+info</div>
+        </article>
+      </div>
+    </div>
+
+    <template v-else>
+      <article class="row d-flex justify-content-center">
+        <div class="card col-12">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{blog[i].titulo}}</h5>
+            <p class="p-1" style="white-space:pre-line;">{{blog[i].texto}}</p>
+            <div class="btn btn-success px-3 py-1 mt-4 text-center texto-chico font-weight-bold" @click="leerMas = !leerMas">
+           Torna indietro
+          </div>
+          </div>
+         
         </div>
       </article>
-    </div>  -->
+    </template>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Eventi",
 
   data() {
-    return {};
+    return {
+      leerMas: false
+    };
+  },
+  computed: {
+    ...mapState(["blog"])
+  },
+  methods: {
+    checkLeerMas(index) {
+      this.leerMas = !this.leerMas;
+      this.i = index;
+    },
+    getImgUrl(pic) {
+      return require("./../assets/imgs/" + pic);
+    }
   }
 };
-</script>
+</script>  
+
 
 <style lang="scss" scoped>
 @import "../../public/css/styles.scss";
+  .card {
+    margin: 2em;
+    .card-img-top {
+       width: 100%;
+       height: 24vh;
+       object-fit: cover;
+    }
+
+    .card-body {
+      color: $dark;
+      background-color: $neutral;
+      border-top: 1px solid dark;
+      padding: 1em;
+      p {
+         font-size: 1.4em;
+      }
+      
+    }
+    .card-title {
+      font-size: 1.8em;
+      font-weight: bold;
+      padding: 1em 0em;
+    }
+    &:hover {
+      transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transition-duration: 1s;
+      -moz-transition-duration: 1s;
+    }
+  }
+ 
+   .info {
+    font-size: 1.4em;
+    color: $scarlet;
+    padding: 1em;
+    &:hover {
+      color: #2e933c;
+    }
+    
+  }
+
+@media (min-width: 1024px) {
+ .card {
+   margin: 3em;
+    .card-img-top {
+        height: 26vh;
+    }
+     .card-title {
+      font-size: 2em;
+     }
+    .card-body {
+      padding: 2rem;
+    }
+ }
+}
 
 </style>
