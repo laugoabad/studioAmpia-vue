@@ -3,13 +3,13 @@
     <navigation />
     <router-link to="/admin" class="admin">Admin</router-link>
  
-    <router-view />
+   
  
     <home />
     <chiSiamo />
     <servizi />
     <aree />
-    <blog />
+    <!-- <blog /> -->
     <eventi />
 
   </div>
@@ -22,7 +22,7 @@ import ChiSiamo from "./views/ChiSiamo.vue";
 import Servizi from "./views/Servizi.vue";
 import Aree from "./views/Aree.vue";
 import Eventi from "./views/Eventi.vue";
-import Blog from "./views/Blog.vue";
+// import Blog from "./views/Blog.vue";
 
 export default {
   name: "App",
@@ -33,7 +33,7 @@ export default {
     Servizi,
     Aree,
     Eventi,
-    Blog,
+    // Blog,
   },
   
 }

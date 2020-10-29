@@ -28,7 +28,7 @@
               <router-link to="/blog"  v-scroll-to="{el: '#blog', duration: 3000 }" class="nav-link">Blog</router-link>
             </li> -->
             <li class="nav-item">
-              <router-link to="/eventi"  v-scroll-to="{el: '#eventi', duration: 2500 }" class="nav-link">Eventi</router-link>
+              <router-link to="/eventi"  v-scroll-to="{el: '#eventi', duration: 3000 }" class="nav-link">Eventi</router-link>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"

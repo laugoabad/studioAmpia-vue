@@ -1,6 +1,6 @@
 <template>
-  <div id="blog" class="container mx-auto px-5">
-    <h2 class="title-section pb-3">Blog</h2>
+  <div id="eventi" class="container mx-auto px-5">
+    <h2 class="title-section pb-3">Eventi</h2>
     <div v-if="!leerMas" class="mt-5">
       <div class="row d-flex justify-content-center mx-3">
         <article
